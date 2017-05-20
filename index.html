@@ -2,16 +2,19 @@
 <html>
 <head>
 	<title>Williams Sonoma</title>
+
 	<!-- BootStrap -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
 	<!-- CSS -->
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
 	<!-- Google Fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 
 </head>
 <body>
-   	<a href="#" class="logo-main"><img src="assets/logo.png"></a>
+   	<a href="#" class="logo-main"><img src="assets/img/logo.png"></a>
 
   <!-- NavBar -->
 	<nav class="navbar navbar-default navbar-inverse navbar-small">
@@ -28,7 +31,7 @@
 			<li><a href="#">HOMEKEEPING</a></li>
 			<li><a href="#">OUTDOOR</a></li>
 			<li><a href="#">SALE</a></li>
-			<li><a href="#">WILLIAMS-SONOMA HOME</a></li>
+			<li><a href="#"><span style="background-color:dark-blue">WILLIAMS-SONOMA HOME</span></a></li>
 		</ul>
 
 	  </div>
@@ -38,7 +41,13 @@
 <div class="container">
 	<div class="row">
 		<div class="col-md-6 col-sm-6 left-div">
-					<img src="assets/product-large-a.jpg">
+			<img class="main-img" src="assets/img/product-large-a.jpg">
+			<span class="product-small">
+				<img src="assets/img/product-small-a.jpg">
+	    		<img src="assets/img/product-small-b.jpg">
+	    		<img src="assets/img/product-small-c.jpg">
+	    		<img src="assets/img/product-small-d.jpg">
+    		</span>
     	</div>
     	<div class="col-md-6 col-sm-6 right-div">
    					<h4>Williams-Sonoma Classic Apron, French Blue</h4>
@@ -54,29 +63,44 @@
 					<h4>$19.95</h4>
 
 			<form>
-				<label>
-					<select>
-						<option disabled selected value="1">Quantity</option>
-					</select>
-				</label>
-				<br>
-				<button type="button" id="Add">Add to cart<span class="glyphicon glyphicon-triangle-right"></span></button>
-
+				<input type="number">
 			</form>
-			<hr>
+				<br>
+							<!-- Modal -->
+			<button type="button" class="btn" data-toggle="modal" data-target=".bs-example-modal-sm">Add to cart ></button>
+
+		<div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+  			<div class="modal-dialog modal-sm" role="document">
+    			<div class="modal-content">
+      				<h3>Item is added to Cart!</h3>
+      				<button type="button" class="btn-primary">Continue Shopping</button>
+      				<button type="button" class="btn-success">Check Out</button>
+    			</div>
+  			</div>
+		</div>
+							<hr>
+
+			<h4><span class="glyphicon glyphicon-menu-right"></span>EXPANDED</h4>
+				<p id="text">This section is expanded. This section can be collapsed by clicking on the "Expanded" text. I have used jQuery for this.</p>
+				<hr>
+				<h4><span class="glyphicon glyphicon-menu-right"></span>COLLAPSED</h4>
+				<hr>
+				<h4><span class="glyphicon glyphicon-menu-right"></span>COLLAPSED</h4>
+				<hr>
 		</div>
 	</div>
 </div>
 
 <footer class="footer">
-	<h6><hr><small>&copy;2016 Williams-Sonoma Inc., All Rights Reserved | Terms and Conditions (Updated March 2016) | Privacy Policy | Legal Statement</h6>
+	<h6><hr><small>&copy;2016 Williams-Sonoma Inc., All Rights Reserved | Terms and Conditions <span style="color:red">(Updated March 2016)</span> | Privacy Policy | Legal Statement</h6>
 </footer>
 
 	<!-- jQuery -->
 	<script type="text/javascript" src="assets/js/lib/jquery-3.1.1.min.js"></script>
-
+    <!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 	<!-- JavaScript -->
-	<script type="text/javascript" src="assets/js/todos.js"></script>
+	<script type="text/javascript" src="assets/js/app.js"></script>
 
 </body>
 </html>
