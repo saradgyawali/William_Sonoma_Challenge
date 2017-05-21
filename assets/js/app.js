@@ -4,7 +4,10 @@ $(document).ready(function() {
 		$("#text").slideToggle("slow")
 	})
 
-	
+
+	$(".product-small").mouseover(function() {
+		$(this).slideToggle("slow");
+	})
 
 
 
