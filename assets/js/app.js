@@ -5,11 +5,6 @@ $(document).ready(function() {
 	})
 
 
-	$(".product-small").mouseover(function() {
-		$(this).slideToggle("slow");
-	})
-
-
 
 
 
